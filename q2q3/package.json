@@ -1,0 +1,18 @@
+{
+  "name": "q2q3",
+  "version": "1.0.0",
+  "description": "A consumer for redis messaging",
+  "main": "q3_consumer.js",
+  "scripts": {
+    "start": "node q3_consumer.js",
+    "q2": "node q2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit, Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "redis": "^3.1.2",
+    "superagent": "^6.1.0"
+  }
+}

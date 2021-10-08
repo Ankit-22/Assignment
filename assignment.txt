@@ -1,8 +1,7 @@
-QAssignment 1 (Use NodeJs (Typescript preferred) / Python as the main programming language to solve/discuss the questions below):
+Assignment 1 (Use NodeJs (Typescript preferred) / Python as the main programming language to solve/discuss the questions below):
 
 Q4) Write the smallest possible python / Nodejs script, which parses this file and puts the questions in correct order into another file. Your approach should be generic with minimal assumptions.
 
-Q10) This is to test our comparator functions
 Q2) If you are a Django / KoaJS expert attempt Q2A else attempt Q2B. 
     Q2A) Create a form with 3 fields: Name, State, City and Pincode (all required fields). The three fields are conditional drop-downs (i.e. selecting state, fills in the city drop down list and selecting city fills in the list of pincodes). The conditions are guided by the following dictionary: (Use Django forms or NodeJS Joi npm package)
 
@@ -28,7 +27,7 @@ Q2) If you are a Django / KoaJS expert attempt Q2A else attempt Q2B.
     }
 
 We don't want to load this dict in the front-end because it might get really big. There's a submit button on this page which saves the data in a model.
-QPart 1 - Implement this using Django or KoaJS (Do not use any frontend javascript)
+Part 1 - Implement this using Django or KoaJS (Do not use any frontend javascript)
 Part 2 - If there is an error in the page (e.g. leave the Name field blank), the state of the page should be maintained so that while the error is shown on the Name field, the data filed by the user in the other fields is not lost.
 
     Q2B) Code a python / nodes script which can scrape the movies currently in the "Box office" from IMDB's homepage (https://www.imdb.com/chart/boxoffice/), list them and get the list of cast for each of them. The script should be able to take a parameter to specify that only show details of TOP 'N' movies. 

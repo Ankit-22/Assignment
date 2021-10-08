@@ -1,4 +1,9 @@
-# Q1
+# Introduction
+I came across this assignment while applying for a startup. The questions were of good quality, so decided to share here. It was a take home assignment but it was expected to be done in 2hrs. I completed it along with the documentation in around 2.5 hrs. You can read the question in `assignment.txt` file. I'll explain my solutions below.
+
+# Solution
+
+## Q1
 The project is in folder `q1q5/`
 I have created 4 Django Models: User, Post, Comment and Connection.
 
@@ -9,7 +14,7 @@ present(Foreign key to Post model), author(Foreign Key to User model), `parentCo
 Foriegn key to handle comment replies)).
 The `Connection` model will store two foreign keys on User model representing their friendship.
 
-### Scalability Comments
+#### Scalability Comments
 Lets break our scalability problem into 2:
 - Quick Queries
 	- Fetching data for a user will be simple as email can be indexed or primary key can be used to search
@@ -24,7 +29,7 @@ Lets break our scalability problem into 2:
 	- Assuming an average user will have 1000 friends, this data will again be of a few TBs. Caching could help to save costly fetch operations on highly active users. Sharding is not necessarily required but we can have that to scale for future.
 
 
-# Q2
+## Q2
 I have created an node script in `q2q3` folder.
 Install the dependecies by running `npm install`.
 You can run the srcipt using `npm run q2 <your_limit>`.
@@ -36,7 +41,7 @@ Then run the docker image using:
 `sudo docker run <your_tag> <your_limit>`
 
 
-# Q3
+## Q3
 I have used Redis as a Messaging Service. I have a redis instance running in background.
 I have written the consumer in NodeJS `q2q3/q3_consumer.js` and publisher in Python `q2q3/q3_publisher.py`.
 
@@ -51,7 +56,7 @@ npm start
 To run the publisher: Install requirements: `pip install -r requirements.txt` and run `python q3_publisher.py`
 
 
-# Q4
+## Q4
 I have created a simple python script to first squeeze all question blocks together, then sort them based on question number.
 
 ```shell
@@ -65,7 +70,7 @@ Assumptions:
 - Bonus Question is a part of Q5
 - Subquestions will be below the parent question
 
-# Q5
+## Q5
 In the project same as Q1, I have added a decorater in `facebook_lite.views` named `allow_post_only`.
 This decorator checks the request method and only allows POST, it responds with 405 on any other method.
 
